@@ -2,7 +2,6 @@
     <head>
         <title>SDC - Home</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-        <meta name="dicoding:email" content="ahmadarbain000@gmail.com">
     </head>
     <body>
         <header class="container">
@@ -29,7 +28,7 @@
                     <tr>
                         <td align="center">
                             <form action='/', method="post" enctype="multipart/form-data">          
-                                <input class="input_image" type="file" name="image"><br><br>
+                                <input class="input_image" type="file" name="image" required><br><br>
                                 <input class="green_button" onmouseover="buttonHover(this)" onmouseout="buttonHoverCancel2(this)" type="submit" value="Predict">     
                             </form>          
                             {% if prediction %}         
